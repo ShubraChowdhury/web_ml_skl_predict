@@ -2,11 +2,11 @@ import os
 import numpy as np
 import pickle
 from flask import (Flask, redirect, render_template, request, send_from_directory, url_for)
-
+#global model
+model = pickle.load(open('models/model.pkl', 'rb'))
 
 app = Flask(__name__)
-global model
-model = pickle.load(open('models/model.pkl', 'rb'))
+
 
 @app.route('/')
 def index():
