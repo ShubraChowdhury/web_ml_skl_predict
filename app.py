@@ -12,6 +12,7 @@ app = Flask(__name__)
 #use the route() decorator to tell Flask what URL should trigger our function.
 @app.route('/')
 def index():
+    print('Request for index page received')
     return render_template('index.html')
 
 #You can use the methods argument of the route() decorator to handle different HTTP methods.
