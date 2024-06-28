@@ -6,7 +6,7 @@ from flask import (Flask, redirect, render_template, request,
 
 app = Flask(__name__)
 # model = pickle.load(open('.models/model.pkl', 'rb'))
-model = pickle.load(open(send_from_directory(os.path.join(app.root_path, 'models'),'model.pkl'),'rb'))
+#model = pickle.load(open(send_from_directory(os.path.join(app.root_path, 'models'),'model.pkl'),'rb'))
 
 @app.route('/')
 def index():
