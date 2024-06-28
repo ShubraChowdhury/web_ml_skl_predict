@@ -5,7 +5,8 @@ from flask import (Flask, redirect, render_template, request, send_from_director
 
 
 app = Flask(__name__)
-
+global model
+model = pickle.load(open('models/model.pkl', 'rb'))
 
 @app.route('/')
 def index():
