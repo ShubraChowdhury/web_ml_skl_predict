@@ -6,11 +6,11 @@ from azureml.core.model import Model
 
 
 app = Flask(__name__)
-#model = pickle.load(open('./models/model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 #model = pickle.load(open(send_from_directory(os.path.join(app.root_path, 'models'),'model.pkl'),'rb'))
-model_path = Model.get_model_path('model.pkl')
-with open(model_path, 'rb') as f:
-    model = pickle.load(f)
+#model_path = Model.get_model_path('model.pkl')
+#with open(model_path, 'rb') as f:
+#    model = pickle.load(f)
 
 
 @app.route('/')
