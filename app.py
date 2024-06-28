@@ -2,6 +2,7 @@ import os
 import numpy as np
 import pickle
 from flask import (Flask, redirect, render_template, request, send_from_directory, url_for)
+import sklearn
 #global model
 model = pickle.load(open('models/model.pkl', 'rb'))
 
