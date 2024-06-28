@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'skl-webapp-sc'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B4B088B3CB834CA9B49B8439FD4AB5BD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5FD8C8E498C74F8E85029AE51D0385C3 }}
